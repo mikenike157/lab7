@@ -32,10 +32,9 @@ def mult(a, b):
 # b -- divisor
 def div(a, b):
     return a / b
-
-
 # -------------------------------------------------------- #
-
+def exp(a, b):
+    return a ** b
 
 # -------------------------------------------------------- #
 # -- MAIN FUNCTIONAILTY -- DO NOT EDIT ------------------- #
@@ -67,9 +66,11 @@ while (True):
             print "Product: ", mult(a, b)
         elif (op == "/"):
             print "Quotient: ", div(a, b)
+        elif (op == "**"):
+            print "Exponent", exp(a, b)
         else:
             print "Invalid operation..."
-
+            
     q = raw_input("Quit? [y/n] ")
     if (q == "y" or q == "Y"):
         break
